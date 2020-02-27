@@ -1,0 +1,11 @@
+version: '2'
+services:
+  dapfthingsservice-postgresql:
+    image: postgres:12.1
+    # volumes:
+    #     - ~/volumes/jhipster/dapfThingsService/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=dapfThingsService
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
